@@ -1,0 +1,2499 @@
+
+Static Call Graph for image .\Objects\LCDs_Profiler.axf
+
+#<CALLGRAPH># ARM Linker, 5060750: Last Updated: Thu Feb 28 11:26:01 2019
+Maximum Stack Usage =        376 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)
+Call chain for Maximum Stack Depth:
+__rt_entry_main => main => LCD_JPEG => pjpeg_load_from_memory => pjpeg_decode_init => initScan => locateSOSMarker => processMarkers => readDHTMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+Functions with no stack information
+
+ * __user_initial_stackheap
+
+
+Mutually Recursive functions
+ * NMI_Handler => NMI_Handler
+ * HardFault_Handler => HardFault_Handler
+ * SVC_Handler => SVC_Handler
+ * PendSV_Handler => PendSV_Handler
+ * SysTick_Handler => SysTick_Handler
+
+
+Function Pointers
+
+ * ADC0_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * CMP0_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * DAC0_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * DMA0_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * DMA1_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * DMA2_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * DMA3_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * DefaultISR from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(.text)
+ * FTFA_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * HardFault_Handler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * I2C0_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * I2C1_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * LLWU_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * LPTMR0_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * LVD_LVW_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * MCG_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * NMI_Handler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * PIT_IRQHandler from pit.o(i.PIT_IRQHandler) referenced from startup_mkl25z4.o(RESET)
+ * PORTA_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * PORTD_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * PendSV_Handler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * RTC_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * RTC_Seconds_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * Reserved20_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * Reserved39_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * Reserved45_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * Reset_Handler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * SPI0_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * SPI1_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * SVC_Handler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * SysTick_Handler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * SystemInit from system_mkl25z4.o(i.SystemInit) referenced from startup_mkl25z4.o(.text)
+ * TPM0_IRQHandler from timers.o(i.TPM0_IRQHandler) referenced from startup_mkl25z4.o(RESET)
+ * TPM1_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * TPM2_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * TSI0_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * UART0_IRQHandler from uart.o(i.UART0_IRQHandler) referenced from startup_mkl25z4.o(RESET)
+ * UART1_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * UART2_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * USB0_IRQHandler from startup_mkl25z4.o(.text) referenced from startup_mkl25z4.o(RESET)
+ * __main from __main.o(!!!main) referenced from startup_mkl25z4.o(.text)
+ * _printf_input_char from _printf_char_common.o(.text) referenced from _printf_char_common.o(.text)
+ * _snputc from _snputc.o(.text) referenced from noretval__2snprintf.o(.text)
+ * fputc from uart.o(i.fputc) referenced from _printf_char_file.o(.text)
+ * pjpeg_need_bytes_callback from lcd_jpeg.o(i.pjpeg_need_bytes_callback) referenced from lcd_jpeg.o(i.pjpeg_load_from_memory)
+
+
+Global Symbols
+
+	__main (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
+
+		[Calls]
+
+			 * __scatterload
+			 * __rt_entry
+
+	__scatterload (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
+
+		[Called By]
+
+			 * __main
+
+	__scatterload_rt2 (Thumb, 52 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+		[Calls]
+
+			 * __rt_entry
+
+	__scatterload_rt2_thumb_only (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+	__scatterload_null (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+	__scatterload_copy (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
+
+		[Calls]
+
+			 * __scatterload_copy
+
+		[Called By]
+
+			 * __scatterload_copy
+
+	__scatterload_zeroinit (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+
+	_printf_percent (Thumb, 0 bytes, Stack size unknown bytes, _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000))
+
+		[Called By]
+
+			 * __printf
+
+	_printf_d (Thumb, 0 bytes, Stack size unknown bytes, _printf_d.o(.ARM.Collect$$_printf_percent$$00000009))
+
+		[Stack]
+
+			Max Depth = 88 + Unknown Stack Size
+			Call Chain = _printf_d => _printf_int_dec => _printf_int_common => _printf_post_padding
+
+
+		[Calls]
+
+			 * _printf_int_dec
+			 * _printf_u
+
+	_printf_u (Thumb, 0 bytes, Stack size unknown bytes, _printf_u.o(.ARM.Collect$$_printf_percent$$0000000A))
+
+		[Stack]
+
+			Max Depth = 88 + Unknown Stack Size
+			Call Chain = _printf_u => _printf_int_dec => _printf_int_common => _printf_post_padding
+
+
+		[Calls]
+
+			 * _printf_int_dec
+			 * _printf_s
+
+		[Called By]
+
+			 * _printf_d
+
+	_printf_s (Thumb, 0 bytes, Stack size unknown bytes, _printf_s.o(.ARM.Collect$$_printf_percent$$00000014))
+
+		[Stack]
+
+			Max Depth = 40 + Unknown Stack Size
+			Call Chain = _printf_s => _printf_string => _printf_cs_common => _printf_str => _printf_post_padding
+
+
+		[Calls]
+
+			 * _printf_percent_end
+			 * _printf_string
+
+		[Called By]
+
+			 * _printf_u
+
+	_printf_percent_end (Thumb, 0 bytes, Stack size unknown bytes, _printf_percent_end.o(.ARM.Collect$$_printf_percent$$00000017))
+
+		[Called By]
+
+			 * _printf_s
+
+	__rt_lib_init (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+
+		[Called By]
+
+			 * __rt_entry_li
+
+	__rt_lib_init_fp_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
+
+	__rt_lib_init_heap_2 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000005))
+
+		[Stack]
+
+			Max Depth = 64 + Unknown Stack Size
+			Call Chain = __rt_lib_init_heap_2 => _init_alloc => __rt_SIGRTMEM => __rt_SIGRTMEM_inner => __default_signal_display => _ttywrch
+
+
+		[Calls]
+
+			 * _init_alloc
+
+	__rt_lib_init_preinit_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
+
+	__rt_lib_init_alloca_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+
+	__rt_lib_init_argv_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+
+	__rt_lib_init_atexit_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+
+	__rt_lib_init_clock_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+
+	__rt_lib_init_cpp_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
+
+	__rt_lib_init_exceptions_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+
+	__rt_lib_init_fp_trap_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+
+	__rt_lib_init_getenv_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+
+	__rt_lib_init_heap_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+
+	__rt_lib_init_lc_collate_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+
+	__rt_lib_init_lc_ctype_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+
+	__rt_lib_init_lc_monetary_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+
+	__rt_lib_init_lc_numeric_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+
+	__rt_lib_init_lc_time_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+
+	__rt_lib_init_rand_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
+
+	__rt_lib_init_return (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
+
+	__rt_lib_init_signal_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+
+	__rt_lib_init_stdio_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
+
+	__rt_lib_init_user_alloc_1 (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+
+	__rt_lib_shutdown (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+
+		[Called By]
+
+			 * __rt_exit_ls
+
+	__rt_lib_shutdown_cpp_1 (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+
+	__rt_lib_shutdown_fp_trap_1 (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
+
+	__rt_lib_shutdown_heap_1 (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+
+	__rt_lib_shutdown_return (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
+
+	__rt_lib_shutdown_signal_1 (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
+
+	__rt_lib_shutdown_stdio_1 (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+
+	__rt_lib_shutdown_user_alloc_1 (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
+
+	__rt_entry (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
+
+		[Called By]
+
+			 * __scatterload_rt2
+			 * __main
+
+	__rt_entry_presh_1 (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+
+	__rt_entry_sh (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))
+
+		[Stack]
+
+			Max Depth = 8 + Unknown Stack Size
+			Call Chain = __rt_entry_sh => __user_setup_stackheap
+
+
+		[Calls]
+
+			 * __user_setup_stackheap
+
+	__rt_entry_li (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+
+		[Calls]
+
+			 * __rt_lib_init
+
+	__rt_entry_postsh_1 (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+
+	__rt_entry_main (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+
+		[Stack]
+
+			Max Depth = 376 + Unknown Stack Size
+			Call Chain = __rt_entry_main => main => LCD_JPEG => pjpeg_load_from_memory => pjpeg_decode_init => initScan => locateSOSMarker => processMarkers => readDHTMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * main
+			 * exit
+
+	__rt_entry_postli_1 (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+
+	__rt_exit (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+
+		[Called By]
+
+			 * exit
+
+	__rt_exit_ls (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+
+		[Calls]
+
+			 * __rt_lib_shutdown
+
+	__rt_exit_prels_1 (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+
+	__rt_exit_exit (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+
+		[Calls]
+
+			 * _sys_exit
+
+	__aeabi_memcpy4 (Thumb, 56 bytes, Stack size 0 bytes, rt_memcpy.o(.emb_text))
+
+		[Called By]
+
+			 * __aeabi_memcpy
+
+	__aeabi_memcpy8 (Thumb, 0 bytes, Stack size 0 bytes, rt_memcpy.o(.emb_text), UNUSED)
+
+	Reset_Handler (Thumb, 12 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	_maybe_terminate_alloc (Thumb, 0 bytes, Stack size 0 bytes, maybetermalloc1.o(.emb_text), UNUSED)
+
+	NMI_Handler (Thumb, 2 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Calls]
+
+			 * NMI_Handler
+
+		[Called By]
+
+			 * NMI_Handler
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	HardFault_Handler (Thumb, 2 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Calls]
+
+			 * HardFault_Handler
+
+		[Called By]
+
+			 * HardFault_Handler
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	SVC_Handler (Thumb, 2 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Calls]
+
+			 * SVC_Handler
+
+		[Called By]
+
+			 * SVC_Handler
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	PendSV_Handler (Thumb, 2 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Calls]
+
+			 * PendSV_Handler
+
+		[Called By]
+
+			 * PendSV_Handler
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	SysTick_Handler (Thumb, 2 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Calls]
+
+			 * SysTick_Handler
+
+		[Called By]
+
+			 * SysTick_Handler
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	ADC0_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	CMP0_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	DAC0_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	DMA0_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	DMA1_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	DMA2_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	DMA3_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	DefaultISR (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(.text)
+
+	FTFA_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	I2C0_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	I2C1_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	LLWU_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	LPTMR0_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	LVD_LVW_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	MCG_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	PORTA_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	PORTD_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	RTC_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	RTC_Seconds_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	Reserved20_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	Reserved39_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	Reserved45_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	SPI0_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	SPI1_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	TPM1_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	TPM2_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	TSI0_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	UART1_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	UART2_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	USB0_IRQHandler (Thumb, 0 bytes, Stack size 0 bytes, startup_mkl25z4.o(.text))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	__user_initial_stackheap (Thumb, 0 bytes, Stack size unknown bytes, startup_mkl25z4.o(.text))
+
+		[Called By]
+
+			 * __user_setup_stackheap
+
+	malloc (Thumb, 98 bytes, Stack size 16 bytes, h1_alloc.o(.text))
+
+		[Stack]
+
+			Max Depth = 56			Call Chain = malloc => __Heap_Full => __Heap_ProvideMemory => free
+
+
+		[Calls]
+
+			 * __Heap_Full
+			 * __rt_heap_descriptor
+
+		[Called By]
+
+			 * pjpeg_load_from_memory
+
+	free (Thumb, 76 bytes, Stack size 16 bytes, h1_free.o(.text))
+
+		[Stack]
+
+			Max Depth = 16			Call Chain = free
+
+
+		[Calls]
+
+			 * __rt_heap_descriptor
+
+		[Called By]
+
+			 * pjpeg_load_from_memory
+			 * __Heap_ProvideMemory
+
+	__2printf (Thumb, 22 bytes, Stack size 24 bytes, noretval__2printf.o(.text))
+
+		[Stack]
+
+			Max Depth = 136 + Unknown Stack Size
+			Call Chain = __2printf => _printf_char_file => _printf_char_common => __printf
+
+
+		[Calls]
+
+			 * _printf_char_file
+
+		[Called By]
+
+			 * pjpeg_load_from_memory
+
+	__2snprintf (Thumb, 50 bytes, Stack size 32 bytes, noretval__2snprintf.o(.text))
+
+		[Stack]
+
+			Max Depth = 128 + Unknown Stack Size
+			Call Chain = __2snprintf => _printf_char_common => __printf
+
+
+		[Calls]
+
+			 * _sputc
+			 * _printf_char_common
+
+		[Called By]
+
+			 * Display_Profile
+
+	_printf_pre_padding (Thumb, 44 bytes, Stack size 16 bytes, _printf_pad.o(.text))
+
+		[Stack]
+
+			Max Depth = 16			Call Chain = _printf_pre_padding
+
+
+		[Called By]
+
+			 * _printf_str
+			 * _printf_int_common
+
+	_printf_post_padding (Thumb, 34 bytes, Stack size 16 bytes, _printf_pad.o(.text))
+
+		[Stack]
+
+			Max Depth = 16			Call Chain = _printf_post_padding
+
+
+		[Called By]
+
+			 * _printf_str
+			 * _printf_int_common
+
+	_printf_str (Thumb, 82 bytes, Stack size 16 bytes, _printf_str.o(.text))
+
+		[Stack]
+
+			Max Depth = 32			Call Chain = _printf_str => _printf_post_padding
+
+
+		[Calls]
+
+			 * _printf_post_padding
+			 * _printf_pre_padding
+
+		[Called By]
+
+			 * _printf_cs_common
+
+	__use_two_region_memory (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+	__rt_heap_escrow (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+	__rt_heap_expand (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+	__rt_heap_descriptor (Thumb, 8 bytes, Stack size 0 bytes, rt_heap_descriptor_intlibspace.o(.text))
+
+		[Called By]
+
+			 * free
+			 * malloc
+			 * _init_alloc
+
+	__use_no_heap (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
+
+	__heap$guard (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
+
+	__Heap_Initialize (Thumb, 10 bytes, Stack size 0 bytes, h1_init.o(.text))
+
+		[Called By]
+
+			 * _init_alloc
+
+	__Heap_DescSize (Thumb, 4 bytes, Stack size 0 bytes, h1_init.o(.text), UNUSED)
+
+	_sputc (Thumb, 10 bytes, Stack size 0 bytes, _sputc.o(.text))
+
+		[Called By]
+
+			 * __2snprintf
+
+	_snputc (Thumb, 16 bytes, Stack size 0 bytes, _snputc.o(.text))
+
+		[Address Reference Count : 1]
+			 * noretval__2snprintf.o(.text)
+
+	__user_libspace (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+	__user_perproc_libspace (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+
+		[Called By]
+
+			 * __user_setup_stackheap
+
+	__user_perthread_libspace (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+	ferror (Thumb, 8 bytes, Stack size 0 bytes, ferror.o(.text))
+
+		[Called By]
+
+			 * _printf_char_file
+
+	__I$use$semihosting (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+	__use_no_semihosting_swi (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+	__semihosting_library_function (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
+
+	_printf_int_dec (Thumb, 90 bytes, Stack size 32 bytes, _printf_dec.o(.text))
+
+		[Stack]
+
+			Max Depth = 88			Call Chain = _printf_int_dec => _printf_int_common => _printf_post_padding
+
+
+		[Calls]
+
+			 * _printf_truncate_unsigned (Weak Reference)
+			 * _printf_truncate_signed (Weak Reference)
+			 * __rt_udiv10
+			 * _printf_int_common
+
+		[Called By]
+
+			 * _printf_u
+			 * _printf_d
+
+	__printf (Thumb, 352 bytes, Stack size 32 bytes, __printf_ss_wp.o(.text))
+
+		[Stack]
+
+			Max Depth = 32 + Unknown Stack Size
+			Call Chain = __printf
+
+
+		[Calls]
+
+			 * _printf_percent
+			 * _is_digit
+
+		[Called By]
+
+			 * _printf_char_common
+
+	__aeabi_memcpy (Thumb, 130 bytes, Stack size 24 bytes, rt_memcpy.o(.text))
+
+		[Stack]
+
+			Max Depth = 24			Call Chain = __aeabi_memcpy
+
+
+		[Calls]
+
+			 * __aeabi_memcpy4
+
+		[Called By]
+
+			 * pjpeg_need_bytes_callback
+
+	__rt_memcpy (Thumb, 0 bytes, Stack size 24 bytes, rt_memcpy.o(.text), UNUSED)
+
+	__aeabi_uidiv (Thumb, 0 bytes, Stack size 0 bytes, aeabi_sdivfast.o(.text), UNUSED)
+
+	__aeabi_uidivmod (Thumb, 28 bytes, Stack size 0 bytes, aeabi_sdivfast.o(.text))
+
+		[Called By]
+
+			 * Init_Profiling
+			 * Display_Profile
+			 * LCD_TS_Read
+			 * LCD_Init_Backlight
+
+	__aeabi_idiv (Thumb, 0 bytes, Stack size 8 bytes, aeabi_sdivfast.o(.text), UNUSED)
+
+	__aeabi_idivmod (Thumb, 460 bytes, Stack size 8 bytes, aeabi_sdivfast.o(.text), UNUSED)
+
+	_terminate_user_alloc (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
+
+	_init_user_alloc (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
+
+	__Heap_Full (Thumb, 32 bytes, Stack size 16 bytes, init_alloc.o(.text))
+
+		[Stack]
+
+			Max Depth = 40			Call Chain = __Heap_Full => __Heap_ProvideMemory => free
+
+
+		[Calls]
+
+			 * __Heap_ProvideMemory
+
+		[Called By]
+
+			 * malloc
+
+	__Heap_Broken (Thumb, 10 bytes, Stack size 8 bytes, init_alloc.o(.text), UNUSED)
+
+		[Calls]
+
+			 * __rt_SIGRTMEM
+
+	_init_alloc (Thumb, 90 bytes, Stack size 24 bytes, init_alloc.o(.text))
+
+		[Stack]
+
+			Max Depth = 64			Call Chain = _init_alloc => __rt_SIGRTMEM => __rt_SIGRTMEM_inner => __default_signal_display => _ttywrch
+
+
+		[Calls]
+
+			 * __rt_SIGRTMEM
+			 * __Heap_ProvideMemory
+			 * __Heap_Initialize
+			 * __rt_heap_descriptor
+
+		[Called By]
+
+			 * __rt_lib_init_heap_2
+
+	_printf_int_common (Thumb, 176 bytes, Stack size 40 bytes, _printf_intcommon.o(.text))
+
+		[Stack]
+
+			Max Depth = 56			Call Chain = _printf_int_common => _printf_post_padding
+
+
+		[Calls]
+
+			 * _printf_post_padding
+			 * _printf_pre_padding
+
+		[Called By]
+
+			 * _printf_int_dec
+
+	_printf_char_common (Thumb, 32 bytes, Stack size 64 bytes, _printf_char_common.o(.text))
+
+		[Stack]
+
+			Max Depth = 96 + Unknown Stack Size
+			Call Chain = _printf_char_common => __printf
+
+
+		[Calls]
+
+			 * __printf
+
+		[Called By]
+
+			 * __2snprintf
+			 * _printf_char_file
+
+	_printf_cs_common (Thumb, 22 bytes, Stack size 8 bytes, _printf_char.o(.text))
+
+		[Stack]
+
+			Max Depth = 40			Call Chain = _printf_cs_common => _printf_str => _printf_post_padding
+
+
+		[Calls]
+
+			 * _printf_str
+			 * _printf_mbtowc (Weak Reference)
+
+		[Called By]
+
+			 * _printf_string
+			 * _printf_char
+
+	_printf_char (Thumb, 16 bytes, Stack size 0 bytes, _printf_char.o(.text), UNUSED)
+
+		[Calls]
+
+			 * _printf_cs_common
+
+	_printf_string (Thumb, 8 bytes, Stack size 0 bytes, _printf_char.o(.text))
+
+		[Stack]
+
+			Max Depth = 40			Call Chain = _printf_string => _printf_cs_common => _printf_str => _printf_post_padding
+
+
+		[Calls]
+
+			 * _printf_cs_common
+
+		[Called By]
+
+			 * _printf_s
+
+	_printf_char_file (Thumb, 34 bytes, Stack size 16 bytes, _printf_char_file.o(.text))
+
+		[Stack]
+
+			Max Depth = 112 + Unknown Stack Size
+			Call Chain = _printf_char_file => _printf_char_common => __printf
+
+
+		[Calls]
+
+			 * ferror
+			 * _printf_char_common
+
+		[Called By]
+
+			 * __2printf
+
+	__rt_udiv10 (Thumb, 40 bytes, Stack size 0 bytes, rtudiv10.o(.text))
+
+		[Called By]
+
+			 * _printf_int_dec
+
+	__Heap_ProvideMemory (Thumb, 52 bytes, Stack size 8 bytes, h1_extend.o(.text))
+
+		[Stack]
+
+			Max Depth = 24			Call Chain = __Heap_ProvideMemory => free
+
+
+		[Calls]
+
+			 * free
+
+		[Called By]
+
+			 * _init_alloc
+			 * __Heap_Full
+
+	__rt_SIGRTMEM (Thumb, 12 bytes, Stack size 8 bytes, defsig_rtmem_outer.o(.text))
+
+		[Stack]
+
+			Max Depth = 40			Call Chain = __rt_SIGRTMEM => __rt_SIGRTMEM_inner => __default_signal_display => _ttywrch
+
+
+		[Calls]
+
+			 * __rt_SIGRTMEM_inner
+			 * __sig_exit
+
+		[Called By]
+
+			 * _init_alloc
+			 * __Heap_Broken
+
+	__user_setup_stackheap (Thumb, 62 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
+
+		[Stack]
+
+			Max Depth = 8 + Unknown Stack Size
+			Call Chain = __user_setup_stackheap
+
+
+		[Calls]
+
+			 * __user_initial_stackheap
+			 * __user_perproc_libspace
+
+		[Called By]
+
+			 * __rt_entry_sh
+
+	exit (Thumb, 16 bytes, Stack size 8 bytes, exit.o(.text))
+
+		[Stack]
+
+			Max Depth = 8 + Unknown Stack Size
+			Call Chain = exit
+
+
+		[Calls]
+
+			 * __rt_exit
+			 * _call_atexit_fns (Weak Reference)
+
+		[Called By]
+
+			 * __rt_entry_main
+
+	__sig_exit (Thumb, 12 bytes, Stack size 8 bytes, defsig_exit.o(.text))
+
+		[Stack]
+
+			Max Depth = 8			Call Chain = __sig_exit
+
+
+		[Calls]
+
+			 * _sys_exit
+
+		[Called By]
+
+			 * __rt_SIGRTMEM
+
+	__rt_SIGRTMEM_inner (Thumb, 22 bytes, Stack size 8 bytes, defsig_rtmem_inner.o(.text))
+
+		[Stack]
+
+			Max Depth = 32			Call Chain = __rt_SIGRTMEM_inner => __default_signal_display => _ttywrch
+
+
+		[Calls]
+
+			 * __default_signal_display
+
+		[Called By]
+
+			 * __rt_SIGRTMEM
+
+	_sys_exit (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))
+
+		[Called By]
+
+			 * __rt_exit_exit
+			 * __sig_exit
+
+	__default_signal_display (Thumb, 52 bytes, Stack size 16 bytes, defsig_general.o(.text))
+
+		[Stack]
+
+			Max Depth = 24			Call Chain = __default_signal_display => _ttywrch
+
+
+		[Calls]
+
+			 * _ttywrch
+
+		[Called By]
+
+			 * __rt_SIGRTMEM_inner
+
+	_ttywrch (Thumb, 12 bytes, Stack size 8 bytes, sys_wrch.o(.text))
+
+		[Stack]
+
+			Max Depth = 8			Call Chain = _ttywrch
+
+
+		[Called By]
+
+			 * __default_signal_display
+
+	Control_RGB_LEDs (Thumb, 50 bytes, Stack size 8 bytes, leds.o(i.Control_RGB_LEDs))
+
+		[Stack]
+
+			Max Depth = 8			Call Chain = Control_RGB_LEDs
+
+
+		[Called By]
+
+			 * main
+
+	Delay (Thumb, 24 bytes, Stack size 8 bytes, delay.o(i.Delay))
+
+		[Stack]
+
+			Max Depth = 8			Call Chain = Delay
+
+
+		[Called By]
+
+			 * main
+			 * LCD_TS_Read
+			 * LCD_Controller_Init
+
+	Disable_Profiling (Thumb, 8 bytes, Stack size 0 bytes, profile.o(i.Disable_Profiling))
+
+		[Called By]
+
+			 * main
+
+	Display_Profile (Thumb, 178 bytes, Stack size 88 bytes, profile.o(i.Display_Profile))
+
+		[Stack]
+
+			Max Depth = 216 + Unknown Stack Size
+			Call Chain = Display_Profile => __2snprintf => _printf_char_common => __printf
+
+
+		[Calls]
+
+			 * LCD_TS_Blocking_Read
+			 * LCD_Text_PrintStr
+			 * LCD_Erase
+			 * __2snprintf
+			 * __aeabi_uidivmod
+
+		[Called By]
+
+			 * main
+
+	Enable_Profiling (Thumb, 8 bytes, Stack size 0 bytes, profile.o(i.Enable_Profiling))
+
+		[Called By]
+
+			 * main
+
+	Init_ADC (Thumb, 24 bytes, Stack size 0 bytes, touchscreen.o(i.Init_ADC))
+
+		[Called By]
+
+			 * LCD_TS_Init
+
+	Init_Profiling (Thumb, 78 bytes, Stack size 8 bytes, profile.o(i.Init_Profiling))
+
+		[Stack]
+
+			Max Depth = 16			Call Chain = Init_Profiling => PIT_Init
+
+
+		[Calls]
+
+			 * PIT_Start
+			 * PIT_Init
+			 * __aeabi_uidivmod
+
+		[Called By]
+
+			 * main
+
+	Init_RGB_LEDs (Thumb, 84 bytes, Stack size 0 bytes, leds.o(i.Init_RGB_LEDs))
+
+		[Called By]
+
+			 * main
+
+	LCD_Controller_Init (Thumb, 98 bytes, Stack size 24 bytes, st7789.o(i.LCD_Controller_Init))
+
+		[Stack]
+
+			Max Depth = 32			Call Chain = LCD_Controller_Init => Delay
+
+
+		[Calls]
+
+			 * Delay
+			 * LCD_24S_Write_Data
+			 * LCD_24S_Write_Command
+
+		[Called By]
+
+			 * LCD_Init
+
+	LCD_Erase (Thumb, 10 bytes, Stack size 8 bytes, lcd_text.o(i.LCD_Erase))
+
+		[Stack]
+
+			Max Depth = 32			Call Chain = LCD_Erase => LCD_Fill_Buffer
+
+
+		[Calls]
+
+			 * LCD_Fill_Buffer
+
+		[Called By]
+
+			 * Display_Profile
+			 * main
+
+	LCD_Fill_Buffer (Thumb, 130 bytes, Stack size 24 bytes, st7789.o(i.LCD_Fill_Buffer))
+
+		[Stack]
+
+			Max Depth = 24			Call Chain = LCD_Fill_Buffer
+
+
+		[Calls]
+
+			 * LCD_24S_Write_Data
+			 * LCD_24S_Write_Command
+
+		[Called By]
+
+			 * LCD_Erase
+
+	LCD_GPIO_Init (Thumb, 174 bytes, Stack size 20 bytes, st7789.o(i.LCD_GPIO_Init))
+
+		[Stack]
+
+			Max Depth = 20			Call Chain = LCD_GPIO_Init
+
+
+		[Called By]
+
+			 * LCD_Init
+
+	LCD_Init (Thumb, 22 bytes, Stack size 8 bytes, st7789.o(i.LCD_Init))
+
+		[Stack]
+
+			Max Depth = 40			Call Chain = LCD_Init => LCD_Controller_Init => Delay
+
+
+		[Calls]
+
+			 * LCD_TS_Init
+			 * LCD_GPIO_Init
+			 * LCD_Controller_Init
+			 * LCD_Init_Backlight
+
+		[Called By]
+
+			 * main
+
+	LCD_JPEG (Thumb, 34 bytes, Stack size 32 bytes, lcd_jpeg.o(i.LCD_JPEG))
+
+		[Stack]
+
+			Max Depth = 360 + Unknown Stack Size
+			Call Chain = LCD_JPEG => pjpeg_load_from_memory => pjpeg_decode_init => initScan => locateSOSMarker => processMarkers => readDHTMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * pjpeg_load_from_memory
+
+		[Called By]
+
+			 * main
+
+	LCD_Plot_Pixel (Thumb, 146 bytes, Stack size 24 bytes, st7789.o(i.LCD_Plot_Pixel))
+
+		[Stack]
+
+			Max Depth = 24			Call Chain = LCD_Plot_Pixel
+
+
+		[Calls]
+
+			 * LCD_24S_Write_Data
+			 * LCD_24S_Write_Command
+
+		[Called By]
+
+			 * pjpeg_load_from_memory
+
+	LCD_Start_Rectangle (Thumb, 154 bytes, Stack size 24 bytes, st7789.o(i.LCD_Start_Rectangle))
+
+		[Stack]
+
+			Max Depth = 24			Call Chain = LCD_Start_Rectangle
+
+
+		[Calls]
+
+			 * LCD_24S_Write_Data
+			 * LCD_24S_Write_Command
+
+		[Called By]
+
+			 * LCD_Text_PrintChar
+
+	LCD_TS_Blocking_Read (Thumb, 36 bytes, Stack size 16 bytes, touchscreen.o(i.LCD_TS_Blocking_Read))
+
+		[Stack]
+
+			Max Depth = 48			Call Chain = LCD_TS_Blocking_Read => LCD_TS_Read => Delay
+
+
+		[Calls]
+
+			 * LCD_TS_Read
+
+		[Called By]
+
+			 * Display_Profile
+
+	LCD_TS_Init (Thumb, 8 bytes, Stack size 4 bytes, touchscreen.o(i.LCD_TS_Init))
+
+		[Stack]
+
+			Max Depth = 4			Call Chain = LCD_TS_Init
+
+
+		[Calls]
+
+			 * Init_ADC
+
+		[Called By]
+
+			 * LCD_Init
+
+	LCD_TS_Read (Thumb, 410 bytes, Stack size 24 bytes, touchscreen.o(i.LCD_TS_Read))
+
+		[Stack]
+
+			Max Depth = 32			Call Chain = LCD_TS_Read => Delay
+
+
+		[Calls]
+
+			 * Delay
+			 * __aeabi_uidivmod
+
+		[Called By]
+
+			 * LCD_TS_Blocking_Read
+
+	LCD_Text_GetGlyphWidth (Thumb, 18 bytes, Stack size 0 bytes, lcd_text.o(i.LCD_Text_GetGlyphWidth))
+
+		[Called By]
+
+			 * LCD_Text_PrintStr
+
+	LCD_Text_Init (Thumb, 44 bytes, Stack size 0 bytes, lcd_text.o(i.LCD_Text_Init))
+
+		[Called By]
+
+			 * main
+
+	LCD_Text_PrintChar (Thumb, 432 bytes, Stack size 40 bytes, lcd_text.o(i.LCD_Text_PrintChar))
+
+		[Stack]
+
+			Max Depth = 64			Call Chain = LCD_Text_PrintChar => LCD_Write_Rectangle_Pixel
+
+
+		[Calls]
+
+			 * LCD_Write_Rectangle_Pixel
+			 * LCD_Start_Rectangle
+
+		[Called By]
+
+			 * LCD_Text_PrintStr
+
+	LCD_Text_PrintStr (Thumb, 54 bytes, Stack size 16 bytes, lcd_text.o(i.LCD_Text_PrintStr))
+
+		[Stack]
+
+			Max Depth = 80			Call Chain = LCD_Text_PrintStr => LCD_Text_PrintChar => LCD_Write_Rectangle_Pixel
+
+
+		[Calls]
+
+			 * LCD_Text_PrintChar
+			 * LCD_Text_GetGlyphWidth
+
+		[Called By]
+
+			 * Display_Profile
+			 * main
+
+	LCD_Text_Set_Colors (Thumb, 32 bytes, Stack size 0 bytes, lcd_text.o(i.LCD_Text_Set_Colors))
+
+		[Called By]
+
+			 * main
+
+	LCD_Write_Rectangle_Pixel (Thumb, 84 bytes, Stack size 24 bytes, st7789.o(i.LCD_Write_Rectangle_Pixel))
+
+		[Stack]
+
+			Max Depth = 24			Call Chain = LCD_Write_Rectangle_Pixel
+
+
+		[Calls]
+
+			 * LCD_24S_Write_Data
+
+		[Called By]
+
+			 * LCD_Text_PrintChar
+
+	PIT_IRQHandler (Thumb, 48 bytes, Stack size 8 bytes, pit.o(i.PIT_IRQHandler))
+
+		[Stack]
+
+			Max Depth = 20			Call Chain = PIT_IRQHandler => Process_Profile_Sample
+
+
+		[Calls]
+
+			 * Process_Profile_Sample
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	PIT_Init (Thumb, 74 bytes, Stack size 8 bytes, pit.o(i.PIT_Init))
+
+		[Stack]
+
+			Max Depth = 8			Call Chain = PIT_Init
+
+
+		[Called By]
+
+			 * Init_Profiling
+
+	PIT_Start (Thumb, 12 bytes, Stack size 0 bytes, pit.o(i.PIT_Start))
+
+		[Called By]
+
+			 * Init_Profiling
+
+	PWM_Init (Thumb, 92 bytes, Stack size 12 bytes, timers.o(i.PWM_Init))
+
+		[Stack]
+
+			Max Depth = 12			Call Chain = PWM_Init
+
+
+		[Called By]
+
+			 * LCD_Init_Backlight
+
+	Process_Profile_Sample (Thumb, 94 bytes, Stack size 12 bytes, profile.o(i.Process_Profile_Sample))
+
+		[Stack]
+
+			Max Depth = 12			Call Chain = Process_Profile_Sample
+
+
+		[Called By]
+
+			 * PIT_IRQHandler
+
+	Q_Dequeue (Thumb, 62 bytes, Stack size 8 bytes, queue.o(i.Q_Dequeue))
+
+		[Stack]
+
+			Max Depth = 8			Call Chain = Q_Dequeue
+
+
+		[Calls]
+
+			 * Q_Empty
+
+		[Called By]
+
+			 * UART0_IRQHandler
+
+	Q_Empty (Thumb, 14 bytes, Stack size 0 bytes, queue.o(i.Q_Empty))
+
+		[Called By]
+
+			 * Q_Dequeue
+			 * UART0_IRQHandler
+
+	Q_Enqueue (Thumb, 56 bytes, Stack size 4 bytes, queue.o(i.Q_Enqueue))
+
+		[Stack]
+
+			Max Depth = 4			Call Chain = Q_Enqueue
+
+
+		[Calls]
+
+			 * Q_Full
+
+		[Called By]
+
+			 * UART0_IRQHandler
+
+	Q_Full (Thumb, 16 bytes, Stack size 0 bytes, queue.o(i.Q_Full))
+
+		[Called By]
+
+			 * Q_Enqueue
+			 * UART0_IRQHandler
+
+	Sort_Profile_Regions (Thumb, 152 bytes, Stack size 16 bytes, profile.o(i.Sort_Profile_Regions))
+
+		[Stack]
+
+			Max Depth = 16			Call Chain = Sort_Profile_Regions
+
+
+		[Called By]
+
+			 * main
+
+	SystemInit (Thumb, 186 bytes, Stack size 0 bytes, system_mkl25z4.o(i.SystemInit))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(.text)
+
+	TPM0_IRQHandler (Thumb, 12 bytes, Stack size 0 bytes, timers.o(i.TPM0_IRQHandler))
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	UART0_IRQHandler (Thumb, 88 bytes, Stack size 16 bytes, uart.o(i.UART0_IRQHandler))
+
+		[Stack]
+
+			Max Depth = 24			Call Chain = UART0_IRQHandler => Q_Dequeue
+
+
+		[Calls]
+
+			 * Q_Full
+			 * Q_Enqueue
+			 * Q_Empty
+			 * Q_Dequeue
+
+		[Address Reference Count : 1]
+			 * startup_mkl25z4.o(RESET)
+
+	__ARM_common_switch8 (Thumb, 26 bytes, Stack size 8 bytes, picojpeg.o(i.__ARM_common_switch8))
+
+		[Stack]
+
+			Max Depth = 8			Call Chain = __ARM_common_switch8
+
+
+		[Called By]
+
+			 * transformBlockReduce
+			 * transformBlock
+			 * processMarkers
+			 * getExtendTest
+			 * getExtendOffset
+
+	_is_digit (Thumb, 14 bytes, Stack size 0 bytes, __printf_wp.o(i._is_digit))
+
+		[Called By]
+
+			 * __printf
+
+	fputc (Thumb, 18 bytes, Stack size 0 bytes, uart.o(i.fputc))
+
+		[Address Reference Count : 1]
+			 * _printf_char_file.o(.text)
+
+	main (Thumb, 172 bytes, Stack size 16 bytes, main.o(i.main))
+
+		[Stack]
+
+			Max Depth = 376 + Unknown Stack Size
+			Call Chain = main => LCD_JPEG => pjpeg_load_from_memory => pjpeg_decode_init => initScan => locateSOSMarker => processMarkers => readDHTMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * Sort_Profile_Regions
+			 * LCD_Text_Set_Colors
+			 * LCD_Text_PrintStr
+			 * LCD_Text_Init
+			 * LCD_JPEG
+			 * LCD_Init
+			 * LCD_Erase
+			 * Init_Profiling
+			 * Enable_Profiling
+			 * Display_Profile
+			 * Disable_Profiling
+			 * Init_RGB_LEDs
+			 * Control_RGB_LEDs
+			 * Delay
+
+		[Called By]
+
+			 * __rt_entry_main
+
+	pjpeg_decode_init (Thumb, 170 bytes, Stack size 16 bytes, picojpeg.o(i.pjpeg_decode_init))
+
+		[Stack]
+
+			Max Depth = 176			Call Chain = pjpeg_decode_init => initScan => locateSOSMarker => processMarkers => readDHTMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * locateSOFMarker
+			 * initScan
+			 * initFrame
+			 * init
+
+		[Called By]
+
+			 * pjpeg_load_from_memory
+
+	pjpeg_decode_mcu (Thumb, 50 bytes, Stack size 8 bytes, picojpeg.o(i.pjpeg_decode_mcu))
+
+		[Stack]
+
+			Max Depth = 136			Call Chain = pjpeg_decode_mcu => decodeNextMCU => processRestart => getBits2 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * decodeNextMCU
+
+		[Called By]
+
+			 * pjpeg_load_from_memory
+
+	pjpeg_load_from_memory (Thumb, 760 bytes, Stack size 152 bytes, lcd_jpeg.o(i.pjpeg_load_from_memory))
+
+		[Stack]
+
+			Max Depth = 328 + Unknown Stack Size
+			Call Chain = pjpeg_load_from_memory => pjpeg_decode_init => initScan => locateSOSMarker => processMarkers => readDHTMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * pjpeg_decode_mcu
+			 * pjpeg_decode_init
+			 * LCD_Plot_Pixel
+			 * __2printf
+			 * free
+			 * malloc
+
+		[Called By]
+
+			 * LCD_JPEG
+
+	pjpeg_need_bytes_callback (Thumb, 38 bytes, Stack size 16 bytes, lcd_jpeg.o(i.pjpeg_need_bytes_callback))
+
+		[Stack]
+
+			Max Depth = 40			Call Chain = pjpeg_need_bytes_callback => __aeabi_memcpy
+
+
+		[Calls]
+
+			 * __aeabi_memcpy
+
+		[Address Reference Count : 1]
+			 * lcd_jpeg.o(i.pjpeg_load_from_memory)
+
+
+Local Symbols
+
+	LCD_24S_Write_Command (Thumb, 36 bytes, Stack size 0 bytes, st7789.o(i.LCD_24S_Write_Command))
+
+		[Called By]
+
+			 * LCD_Fill_Buffer
+			 * LCD_Plot_Pixel
+			 * LCD_Controller_Init
+			 * LCD_Start_Rectangle
+
+	LCD_24S_Write_Data (Thumb, 36 bytes, Stack size 0 bytes, st7789.o(i.LCD_24S_Write_Data))
+
+		[Called By]
+
+			 * LCD_Fill_Buffer
+			 * LCD_Plot_Pixel
+			 * LCD_Controller_Init
+			 * LCD_Write_Rectangle_Pixel
+			 * LCD_Start_Rectangle
+
+	LCD_Init_Backlight (Thumb, 64 bytes, Stack size 8 bytes, st7789.o(i.LCD_Init_Backlight))
+
+		[Stack]
+
+			Max Depth = 20			Call Chain = LCD_Init_Backlight => PWM_Init
+
+
+		[Calls]
+
+			 * PWM_Init
+			 * __aeabi_uidivmod
+
+		[Called By]
+
+			 * LCD_Init
+
+	addAndClamp (Thumb, 30 bytes, Stack size 0 bytes, picojpeg.o(i.addAndClamp))
+
+		[Called By]
+
+			 * upsampleCrV
+			 * upsampleCrH
+			 * upsampleCr
+			 * upsampleCbV
+			 * upsampleCbH
+			 * upsampleCb
+			 * transformBlockReduce
+			 * convertCr
+			 * convertCb
+
+	checkHuffTables (Thumb, 66 bytes, Stack size 20 bytes, picojpeg.o(i.checkHuffTables))
+
+		[Stack]
+
+			Max Depth = 20			Call Chain = checkHuffTables
+
+
+		[Called By]
+
+			 * initScan
+
+	checkQuantTables (Thumb, 52 bytes, Stack size 12 bytes, picojpeg.o(i.checkQuantTables))
+
+		[Stack]
+
+			Max Depth = 12			Call Chain = checkQuantTables
+
+
+		[Called By]
+
+			 * initScan
+
+	clamp (Thumb, 26 bytes, Stack size 0 bytes, picojpeg.o(i.clamp))
+
+		[Called By]
+
+			 * transformBlockReduce
+			 * idctCols
+
+	convertCb (Thumb, 78 bytes, Stack size 24 bytes, picojpeg.o(i.convertCb))
+
+		[Stack]
+
+			Max Depth = 24			Call Chain = convertCb
+
+
+		[Calls]
+
+			 * subAndClamp
+			 * addAndClamp
+
+		[Called By]
+
+			 * transformBlock
+
+	convertCr (Thumb, 80 bytes, Stack size 24 bytes, picojpeg.o(i.convertCr))
+
+		[Stack]
+
+			Max Depth = 24			Call Chain = convertCr
+
+
+		[Calls]
+
+			 * subAndClamp
+			 * addAndClamp
+
+		[Called By]
+
+			 * transformBlock
+
+	copyY (Thumb, 50 bytes, Stack size 12 bytes, picojpeg.o(i.copyY))
+
+		[Stack]
+
+			Max Depth = 12			Call Chain = copyY
+
+
+		[Called By]
+
+			 * transformBlock
+
+	createWinogradQuant (Thumb, 30 bytes, Stack size 12 bytes, picojpeg.o(i.createWinogradQuant))
+
+		[Stack]
+
+			Max Depth = 12			Call Chain = createWinogradQuant
+
+
+		[Called By]
+
+			 * readDQTMarker
+
+	decodeNextMCU (Thumb, 494 bytes, Stack size 32 bytes, picojpeg.o(i.decodeNextMCU))
+
+		[Stack]
+
+			Max Depth = 128			Call Chain = decodeNextMCU => processRestart => getBits2 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * transformBlockReduce
+			 * transformBlock
+			 * processRestart
+			 * huffExtend
+			 * huffDecode
+			 * getBits2
+
+		[Called By]
+
+			 * pjpeg_decode_mcu
+
+	fillInBuf (Thumb, 32 bytes, Stack size 16 bytes, picojpeg.o(i.fillInBuf))
+
+		[Stack]
+
+			Max Depth = 16			Call Chain = fillInBuf
+
+
+		[Called By]
+
+			 * getChar
+
+	fixInBuffer (Thumb, 40 bytes, Stack size 8 bytes, picojpeg.o(i.fixInBuffer))
+
+		[Stack]
+
+			Max Depth = 88			Call Chain = fixInBuffer => getBits2 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * stuffChar
+			 * getBits2
+
+		[Called By]
+
+			 * initScan
+
+	getBit (Thumb, 54 bytes, Stack size 16 bytes, picojpeg.o(i.getBit))
+
+		[Stack]
+
+			Max Depth = 56			Call Chain = getBit => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * getOctet
+
+		[Called By]
+
+			 * huffDecode
+
+	getBits (Thumb, 116 bytes, Stack size 32 bytes, picojpeg.o(i.getBits))
+
+		[Stack]
+
+			Max Depth = 72			Call Chain = getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * getOctet
+
+		[Called By]
+
+			 * getBits2
+			 * getBits1
+
+	getBits1 (Thumb, 10 bytes, Stack size 8 bytes, picojpeg.o(i.getBits1))
+
+		[Stack]
+
+			Max Depth = 80			Call Chain = getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * getBits
+
+		[Called By]
+
+			 * skipVariableMarker
+			 * readSOSMarker
+			 * readSOFMarker
+			 * readDRIMarker
+			 * readDQTMarker
+			 * readDHTMarker
+			 * nextMarker
+			 * locateSOIMarker
+			 * init
+
+	getBits2 (Thumb, 10 bytes, Stack size 8 bytes, picojpeg.o(i.getBits2))
+
+		[Stack]
+
+			Max Depth = 80			Call Chain = getBits2 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * getBits
+
+		[Called By]
+
+			 * processRestart
+			 * fixInBuffer
+			 * decodeNextMCU
+
+	getChar (Thumb, 58 bytes, Stack size 8 bytes, picojpeg.o(i.getChar))
+
+		[Stack]
+
+			Max Depth = 24			Call Chain = getChar => fillInBuf
+
+
+		[Calls]
+
+			 * fillInBuf
+
+		[Called By]
+
+			 * processRestart
+			 * getOctet
+
+	getExtendOffset (Thumb, 110 bytes, Stack size 4 bytes, picojpeg.o(i.getExtendOffset))
+
+		[Stack]
+
+			Max Depth = 12			Call Chain = getExtendOffset => __ARM_common_switch8
+
+
+		[Calls]
+
+			 * __ARM_common_switch8
+
+		[Called By]
+
+			 * huffExtend
+
+	getExtendTest (Thumb, 108 bytes, Stack size 4 bytes, picojpeg.o(i.getExtendTest))
+
+		[Stack]
+
+			Max Depth = 12			Call Chain = getExtendTest => __ARM_common_switch8
+
+
+		[Calls]
+
+			 * __ARM_common_switch8
+
+		[Called By]
+
+			 * huffExtend
+
+	getHuffTable (Thumb, 40 bytes, Stack size 0 bytes, picojpeg.o(i.getHuffTable))
+
+		[Called By]
+
+			 * readDHTMarker
+
+	getHuffVal (Thumb, 40 bytes, Stack size 0 bytes, picojpeg.o(i.getHuffVal))
+
+		[Called By]
+
+			 * readDHTMarker
+
+	getMaxHuffCodes (Thumb, 12 bytes, Stack size 0 bytes, picojpeg.o(i.getMaxHuffCodes))
+
+		[Called By]
+
+			 * readDHTMarker
+
+	getOctet (Thumb, 40 bytes, Stack size 16 bytes, picojpeg.o(i.getOctet))
+
+		[Stack]
+
+			Max Depth = 40			Call Chain = getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * stuffChar
+			 * getChar
+
+		[Called By]
+
+			 * getBits
+			 * getBit
+
+	huffCreate (Thumb, 72 bytes, Stack size 20 bytes, picojpeg.o(i.huffCreate))
+
+		[Stack]
+
+			Max Depth = 20			Call Chain = huffCreate
+
+
+		[Called By]
+
+			 * readDHTMarker
+
+	huffDecode (Thumb, 74 bytes, Stack size 32 bytes, picojpeg.o(i.huffDecode))
+
+		[Stack]
+
+			Max Depth = 88			Call Chain = huffDecode => getBit => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * getBit
+
+		[Called By]
+
+			 * decodeNextMCU
+
+	huffExtend (Thumb, 30 bytes, Stack size 16 bytes, picojpeg.o(i.huffExtend))
+
+		[Stack]
+
+			Max Depth = 28			Call Chain = huffExtend => getExtendTest => __ARM_common_switch8
+
+
+		[Calls]
+
+			 * getExtendTest
+			 * getExtendOffset
+
+		[Called By]
+
+			 * decodeNextMCU
+
+	idctCols (Thumb, 420 bytes, Stack size 80 bytes, picojpeg.o(i.idctCols))
+
+		[Stack]
+
+			Max Depth = 80			Call Chain = idctCols
+
+
+		[Calls]
+
+			 * imul_b5
+			 * imul_b4
+			 * imul_b2
+			 * imul_b1_b3
+			 * clamp
+
+		[Called By]
+
+			 * transformBlock
+
+	idctRows (Thumb, 260 bytes, Stack size 56 bytes, picojpeg.o(i.idctRows))
+
+		[Stack]
+
+			Max Depth = 56			Call Chain = idctRows
+
+
+		[Calls]
+
+			 * imul_b5
+			 * imul_b4
+			 * imul_b2
+			 * imul_b1_b3
+
+		[Called By]
+
+			 * transformBlock
+
+	imul_b1_b3 (Thumb, 14 bytes, Stack size 0 bytes, picojpeg.o(i.imul_b1_b3))
+
+		[Called By]
+
+			 * idctRows
+			 * idctCols
+
+	imul_b2 (Thumb, 12 bytes, Stack size 0 bytes, picojpeg.o(i.imul_b2))
+
+		[Called By]
+
+			 * idctRows
+			 * idctCols
+
+	imul_b4 (Thumb, 14 bytes, Stack size 0 bytes, picojpeg.o(i.imul_b4))
+
+		[Called By]
+
+			 * idctRows
+			 * idctCols
+
+	imul_b5 (Thumb, 12 bytes, Stack size 0 bytes, picojpeg.o(i.imul_b5))
+
+		[Called By]
+
+			 * idctRows
+			 * idctCols
+
+	init (Thumb, 48 bytes, Stack size 8 bytes, picojpeg.o(i.init))
+
+		[Stack]
+
+			Max Depth = 88			Call Chain = init => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * getBits1
+
+		[Called By]
+
+			 * pjpeg_decode_init
+
+	initFrame (Thumb, 290 bytes, Stack size 20 bytes, picojpeg.o(i.initFrame))
+
+		[Stack]
+
+			Max Depth = 20			Call Chain = initFrame
+
+
+		[Called By]
+
+			 * pjpeg_decode_init
+
+	initScan (Thumb, 72 bytes, Stack size 8 bytes, picojpeg.o(i.initScan))
+
+		[Stack]
+
+			Max Depth = 160			Call Chain = initScan => locateSOSMarker => processMarkers => readDHTMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * locateSOSMarker
+			 * fixInBuffer
+			 * checkQuantTables
+			 * checkHuffTables
+
+		[Called By]
+
+			 * pjpeg_decode_init
+
+	locateSOFMarker (Thumb, 58 bytes, Stack size 8 bytes, picojpeg.o(i.locateSOFMarker))
+
+		[Stack]
+
+			Max Depth = 144			Call Chain = locateSOFMarker => processMarkers => readDHTMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * readSOFMarker
+			 * processMarkers
+			 * locateSOIMarker
+
+		[Called By]
+
+			 * pjpeg_decode_init
+
+	locateSOIMarker (Thumb, 90 bytes, Stack size 16 bytes, picojpeg.o(i.locateSOIMarker))
+
+		[Stack]
+
+			Max Depth = 96			Call Chain = locateSOIMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * getBits1
+
+		[Called By]
+
+			 * locateSOFMarker
+
+	locateSOSMarker (Thumb, 48 bytes, Stack size 16 bytes, picojpeg.o(i.locateSOSMarker))
+
+		[Stack]
+
+			Max Depth = 152			Call Chain = locateSOSMarker => processMarkers => readDHTMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * readSOSMarker
+			 * processMarkers
+
+		[Called By]
+
+			 * initScan
+
+	nextMarker (Thumb, 32 bytes, Stack size 8 bytes, picojpeg.o(i.nextMarker))
+
+		[Stack]
+
+			Max Depth = 88			Call Chain = nextMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * getBits1
+
+		[Called By]
+
+			 * processMarkers
+
+	processMarkers (Thumb, 140 bytes, Stack size 8 bytes, picojpeg.o(i.processMarkers))
+
+		[Stack]
+
+			Max Depth = 136			Call Chain = processMarkers => readDHTMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * __ARM_common_switch8
+			 * skipVariableMarker
+			 * readDRIMarker
+			 * readDQTMarker
+			 * readDHTMarker
+			 * nextMarker
+
+		[Called By]
+
+			 * locateSOSMarker
+			 * locateSOFMarker
+
+	processRestart (Thumb, 116 bytes, Stack size 16 bytes, picojpeg.o(i.processRestart))
+
+		[Stack]
+
+			Max Depth = 96			Call Chain = processRestart => getBits2 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * getChar
+			 * getBits2
+
+		[Called By]
+
+			 * decodeNextMCU
+
+	readDHTMarker (Thumb, 192 bytes, Stack size 48 bytes, picojpeg.o(i.readDHTMarker))
+
+		[Stack]
+
+			Max Depth = 128			Call Chain = readDHTMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * huffCreate
+			 * getMaxHuffCodes
+			 * getHuffVal
+			 * getHuffTable
+			 * getBits1
+
+		[Called By]
+
+			 * processMarkers
+
+	readDQTMarker (Thumb, 166 bytes, Stack size 24 bytes, picojpeg.o(i.readDQTMarker))
+
+		[Stack]
+
+			Max Depth = 104			Call Chain = readDQTMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * getBits1
+			 * createWinogradQuant
+
+		[Called By]
+
+			 * processMarkers
+
+	readDRIMarker (Thumb, 30 bytes, Stack size 8 bytes, picojpeg.o(i.readDRIMarker))
+
+		[Stack]
+
+			Max Depth = 88			Call Chain = readDRIMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * getBits1
+
+		[Called By]
+
+			 * processMarkers
+
+	readSOFMarker (Thumb, 178 bytes, Stack size 16 bytes, picojpeg.o(i.readSOFMarker))
+
+		[Stack]
+
+			Max Depth = 96			Call Chain = readSOFMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * getBits1
+
+		[Called By]
+
+			 * locateSOFMarker
+
+	readSOSMarker (Thumb, 184 bytes, Stack size 24 bytes, picojpeg.o(i.readSOSMarker))
+
+		[Stack]
+
+			Max Depth = 104			Call Chain = readSOSMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * getBits1
+
+		[Called By]
+
+			 * locateSOSMarker
+
+	skipVariableMarker (Thumb, 40 bytes, Stack size 8 bytes, picojpeg.o(i.skipVariableMarker))
+
+		[Stack]
+
+			Max Depth = 88			Call Chain = skipVariableMarker => getBits1 => getBits => getOctet => getChar => fillInBuf
+
+
+		[Calls]
+
+			 * getBits1
+
+		[Called By]
+
+			 * processMarkers
+
+	stuffChar (Thumb, 22 bytes, Stack size 0 bytes, picojpeg.o(i.stuffChar))
+
+		[Called By]
+
+			 * getOctet
+			 * fixInBuffer
+
+	subAndClamp (Thumb, 30 bytes, Stack size 0 bytes, picojpeg.o(i.subAndClamp))
+
+		[Called By]
+
+			 * upsampleCrV
+			 * upsampleCrH
+			 * upsampleCr
+			 * upsampleCbV
+			 * upsampleCbH
+			 * upsampleCb
+			 * transformBlockReduce
+			 * convertCr
+			 * convertCb
+
+	transformBlock (Thumb, 326 bytes, Stack size 8 bytes, picojpeg.o(i.transformBlock))
+
+		[Stack]
+
+			Max Depth = 88			Call Chain = transformBlock => idctCols
+
+
+		[Calls]
+
+			 * __ARM_common_switch8
+			 * upsampleCrV
+			 * upsampleCrH
+			 * upsampleCr
+			 * upsampleCbV
+			 * upsampleCbH
+			 * upsampleCb
+			 * idctRows
+			 * idctCols
+			 * copyY
+			 * convertCr
+			 * convertCb
+
+		[Called By]
+
+			 * decodeNextMCU
+
+	transformBlockReduce (Thumb, 888 bytes, Stack size 64 bytes, picojpeg.o(i.transformBlockReduce))
+
+		[Stack]
+
+			Max Depth = 72			Call Chain = transformBlockReduce => __ARM_common_switch8
+
+
+		[Calls]
+
+			 * __ARM_common_switch8
+			 * subAndClamp
+			 * clamp
+			 * addAndClamp
+
+		[Called By]
+
+			 * decodeNextMCU
+
+	upsampleCb (Thumb, 172 bytes, Stack size 32 bytes, picojpeg.o(i.upsampleCb))
+
+		[Stack]
+
+			Max Depth = 32			Call Chain = upsampleCb
+
+
+		[Calls]
+
+			 * subAndClamp
+			 * addAndClamp
+
+		[Called By]
+
+			 * transformBlock
+
+	upsampleCbH (Thumb, 128 bytes, Stack size 32 bytes, picojpeg.o(i.upsampleCbH))
+
+		[Stack]
+
+			Max Depth = 32			Call Chain = upsampleCbH
+
+
+		[Calls]
+
+			 * subAndClamp
+			 * addAndClamp
+
+		[Called By]
+
+			 * transformBlock
+
+	upsampleCbV (Thumb, 128 bytes, Stack size 32 bytes, picojpeg.o(i.upsampleCbV))
+
+		[Stack]
+
+			Max Depth = 32			Call Chain = upsampleCbV
+
+
+		[Calls]
+
+			 * subAndClamp
+			 * addAndClamp
+
+		[Called By]
+
+			 * transformBlock
+
+	upsampleCr (Thumb, 174 bytes, Stack size 32 bytes, picojpeg.o(i.upsampleCr))
+
+		[Stack]
+
+			Max Depth = 32			Call Chain = upsampleCr
+
+
+		[Calls]
+
+			 * subAndClamp
+			 * addAndClamp
+
+		[Called By]
+
+			 * transformBlock
+
+	upsampleCrH (Thumb, 130 bytes, Stack size 32 bytes, picojpeg.o(i.upsampleCrH))
+
+		[Stack]
+
+			Max Depth = 32			Call Chain = upsampleCrH
+
+
+		[Calls]
+
+			 * subAndClamp
+			 * addAndClamp
+
+		[Called By]
+
+			 * transformBlock
+
+	upsampleCrV (Thumb, 130 bytes, Stack size 32 bytes, picojpeg.o(i.upsampleCrV))
+
+		[Stack]
+
+			Max Depth = 32			Call Chain = upsampleCrV
+
+
+		[Calls]
+
+			 * subAndClamp
+			 * addAndClamp
+
+		[Called By]
+
+			 * transformBlock
+
+	_printf_input_char (Thumb, 10 bytes, Stack size 0 bytes, _printf_char_common.o(.text))
+
+		[Address Reference Count : 1]
+			 * _printf_char_common.o(.text)
+
+
+Undefined Global Symbols
+
+	_call_atexit_fns (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+
+		[Called By]
+
+			 * exit
+
+	_printf_mbtowc (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+
+		[Called By]
+
+			 * _printf_cs_common
+
+	_printf_truncate_signed (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+
+		[Called By]
+
+			 * _printf_int_dec
+
+	_printf_truncate_unsigned (ARM, 0 bytes, Stack size 0 bytes, UNDEFINED)
+
+		[Called By]
+
+			 * _printf_int_dec

@@ -1,0 +1,472 @@
+digraph mycallgraph {
+
+node [shape=oval];
+
+node [label="malloc
+Stack Size = 16 
+Max Depth = 56"]; malloc;
+node [label="free
+Stack Size = 16 
+Max Depth = 16"]; free;
+node [label="ferror
+Stack Size = 0 
+Max Depth = 16"]; ferror;
+node [label="exit
+Stack Size = 8 
+Max Depth = 8 + Unknown Stack Siz"]; exit;
+node [label="Control_RGB_LEDs
+Stack Size = 8 
+Max Depth = 8"]; Control_RGB_LEDs;
+node [label="Delay
+Stack Size = 8 
+Max Depth = 8"]; Delay;
+node [label="Disable_Profiling
+Stack Size = 0 
+Max Depth = 8"]; Disable_Profiling;
+node [label="Display_Profile
+Stack Size = 88 
+Max Depth = 216 + Unknown Stack Siz"]; Display_Profile;
+node [label="Enable_Profiling
+Stack Size = 0 
+Max Depth = 216 + Unknown Stack Siz"]; Enable_Profiling;
+node [label="Init_ADC
+Stack Size = 0 
+Max Depth = 216 + Unknown Stack Siz"]; Init_ADC;
+node [label="Init_Profiling
+Stack Size = 8 
+Max Depth = 16"]; Init_Profiling;
+node [label="Init_RGB_LEDs
+Stack Size = 0 
+Max Depth = 16"]; Init_RGB_LEDs;
+node [label="LCD_Controller_Init
+Stack Size = 24 
+Max Depth = 32"]; LCD_Controller_Init;
+node [label="LCD_Erase
+Stack Size = 8 
+Max Depth = 32"]; LCD_Erase;
+node [label="LCD_Fill_Buffer
+Stack Size = 24 
+Max Depth = 24"]; LCD_Fill_Buffer;
+node [label="LCD_GPIO_Init
+Stack Size = 20 
+Max Depth = 20"]; LCD_GPIO_Init;
+node [label="LCD_Init
+Stack Size = 8 
+Max Depth = 40"]; LCD_Init;
+node [label="LCD_JPEG
+Stack Size = 32 
+Max Depth = 360 + Unknown Stack Siz"]; LCD_JPEG;
+node [label="LCD_Plot_Pixel
+Stack Size = 24 
+Max Depth = 24"]; LCD_Plot_Pixel;
+node [label="LCD_Start_Rectangle
+Stack Size = 24 
+Max Depth = 24"]; LCD_Start_Rectangle;
+node [label="LCD_TS_Blocking_Read
+Stack Size = 16 
+Max Depth = 48"]; LCD_TS_Blocking_Read;
+node [label="LCD_TS_Init
+Stack Size = 4 
+Max Depth = 4"]; LCD_TS_Init;
+node [label="LCD_TS_Read
+Stack Size = 24 
+Max Depth = 32"]; LCD_TS_Read;
+node [label="LCD_Text_GetGlyphWidth
+Stack Size = 0 
+Max Depth = 32"]; LCD_Text_GetGlyphWidth;
+node [label="LCD_Text_Init
+Stack Size = 0 
+Max Depth = 32"]; LCD_Text_Init;
+node [label="LCD_Text_PrintChar
+Stack Size = 40 
+Max Depth = 64"]; LCD_Text_PrintChar;
+node [label="LCD_Text_PrintStr
+Stack Size = 16 
+Max Depth = 80"]; LCD_Text_PrintStr;
+node [label="LCD_Text_Set_Colors
+Stack Size = 0 
+Max Depth = 80"]; LCD_Text_Set_Colors;
+node [label="LCD_Write_Rectangle_Pixel
+Stack Size = 24 
+Max Depth = 24"]; LCD_Write_Rectangle_Pixel;
+node [label="PIT_IRQHandler
+Stack Size = 8 
+Max Depth = 20"]; PIT_IRQHandler;
+node [label="PIT_Init
+Stack Size = 8 
+Max Depth = 8"]; PIT_Init;
+node [label="PIT_Start
+Stack Size = 0 
+Max Depth = 8"]; PIT_Start;
+node [label="PWM_Init
+Stack Size = 12 
+Max Depth = 12"]; PWM_Init;
+node [label="Process_Profile_Sample
+Stack Size = 12 
+Max Depth = 12"]; Process_Profile_Sample;
+node [label="Q_Dequeue
+Stack Size = 8 
+Max Depth = 8"]; Q_Dequeue;
+node [label="Q_Empty
+Stack Size = 0 
+Max Depth = 8"]; Q_Empty;
+node [label="Q_Enqueue
+Stack Size = 4 
+Max Depth = 4"]; Q_Enqueue;
+node [label="Q_Full
+Stack Size = 0 
+Max Depth = 4"]; Q_Full;
+node [label="Sort_Profile_Regions
+Stack Size = 16 
+Max Depth = 16"]; Sort_Profile_Regions;
+node [label="SystemInit
+Stack Size = 0 
+Max Depth = 16"]; SystemInit;
+node [label="UART0_IRQHandler
+Stack Size = 16 
+Max Depth = 24"]; UART0_IRQHandler;
+node [label="fputc
+Stack Size = 0 
+Max Depth = 24"]; fputc;
+node [label="main
+Stack Size = 16 
+Max Depth = 376 + Unknown Stack Siz"]; main;
+node [label="pjpeg_decode_init
+Stack Size = 16 
+Max Depth = 176"]; pjpeg_decode_init;
+node [label="pjpeg_decode_mcu
+Stack Size = 8 
+Max Depth = 136"]; pjpeg_decode_mcu;
+node [label="pjpeg_load_from_memory
+Stack Size = 152 
+Max Depth = 328 + Unknown Stack Siz"]; pjpeg_load_from_memory;
+node [label="pjpeg_need_bytes_callback
+Stack Size = 16 
+Max Depth = 40"]; pjpeg_need_bytes_callback;
+node [label="LCD_24S_Write_Command
+Stack Size = 0 
+Max Depth = 40"]; LCD_24S_Write_Command;
+node [label="LCD_24S_Write_Data
+Stack Size = 0 
+Max Depth = 40"]; LCD_24S_Write_Data;
+node [label="LCD_Init_Backlight
+Stack Size = 8 
+Max Depth = 20"]; LCD_Init_Backlight;
+node [label="addAndClamp
+Stack Size = 0 
+Max Depth = 20"]; addAndClamp;
+node [label="checkHuffTables
+Stack Size = 20 
+Max Depth = 20"]; checkHuffTables;
+node [label="checkQuantTables
+Stack Size = 12 
+Max Depth = 12"]; checkQuantTables;
+node [label="clamp
+Stack Size = 0 
+Max Depth = 12"]; clamp;
+node [label="convertCb
+Stack Size = 24 
+Max Depth = 24"]; convertCb;
+node [label="convertCr
+Stack Size = 24 
+Max Depth = 24"]; convertCr;
+node [label="copyY
+Stack Size = 12 
+Max Depth = 12"]; copyY;
+node [label="createWinogradQuant
+Stack Size = 12 
+Max Depth = 12"]; createWinogradQuant;
+node [label="decodeNextMCU
+Stack Size = 32 
+Max Depth = 128"]; decodeNextMCU;
+node [label="fillInBuf
+Stack Size = 16 
+Max Depth = 16"]; fillInBuf;
+node [label="fixInBuffer
+Stack Size = 8 
+Max Depth = 88"]; fixInBuffer;
+node [label="getBit
+Stack Size = 16 
+Max Depth = 56"]; getBit;
+node [label="getBits
+Stack Size = 32 
+Max Depth = 72"]; getBits;
+node [label="getBits1
+Stack Size = 8 
+Max Depth = 80"]; getBits1;
+node [label="getBits2
+Stack Size = 8 
+Max Depth = 80"]; getBits2;
+node [label="getChar
+Stack Size = 8 
+Max Depth = 24"]; getChar;
+node [label="getExtendOffset
+Stack Size = 4 
+Max Depth = 12"]; getExtendOffset;
+node [label="getExtendTest
+Stack Size = 4 
+Max Depth = 12"]; getExtendTest;
+node [label="getHuffTable
+Stack Size = 0 
+Max Depth = 12"]; getHuffTable;
+node [label="getHuffVal
+Stack Size = 0 
+Max Depth = 12"]; getHuffVal;
+node [label="getMaxHuffCodes
+Stack Size = 0 
+Max Depth = 12"]; getMaxHuffCodes;
+node [label="getOctet
+Stack Size = 16 
+Max Depth = 40"]; getOctet;
+node [label="huffCreate
+Stack Size = 20 
+Max Depth = 20"]; huffCreate;
+node [label="huffDecode
+Stack Size = 32 
+Max Depth = 88"]; huffDecode;
+node [label="huffExtend
+Stack Size = 16 
+Max Depth = 28"]; huffExtend;
+node [label="idctCols
+Stack Size = 80 
+Max Depth = 80"]; idctCols;
+node [label="idctRows
+Stack Size = 56 
+Max Depth = 56"]; idctRows;
+node [label="imul_b1_b3
+Stack Size = 0 
+Max Depth = 56"]; imul_b1_b3;
+node [label="imul_b2
+Stack Size = 0 
+Max Depth = 56"]; imul_b2;
+node [label="imul_b4
+Stack Size = 0 
+Max Depth = 56"]; imul_b4;
+node [label="imul_b5
+Stack Size = 0 
+Max Depth = 56"]; imul_b5;
+node [label="init
+Stack Size = 8 
+Max Depth = 88"]; init;
+node [label="initFrame
+Stack Size = 20 
+Max Depth = 20"]; initFrame;
+node [label="initScan
+Stack Size = 8 
+Max Depth = 160"]; initScan;
+node [label="locateSOFMarker
+Stack Size = 8 
+Max Depth = 144"]; locateSOFMarker;
+node [label="locateSOIMarker
+Stack Size = 16 
+Max Depth = 96"]; locateSOIMarker;
+node [label="locateSOSMarker
+Stack Size = 16 
+Max Depth = 152"]; locateSOSMarker;
+node [label="nextMarker
+Stack Size = 8 
+Max Depth = 88"]; nextMarker;
+node [label="processMarkers
+Stack Size = 8 
+Max Depth = 136"]; processMarkers;
+node [label="processRestart
+Stack Size = 16 
+Max Depth = 96"]; processRestart;
+node [label="readDHTMarker
+Stack Size = 48 
+Max Depth = 128"]; readDHTMarker;
+node [label="readDQTMarker
+Stack Size = 24 
+Max Depth = 104"]; readDQTMarker;
+node [label="readDRIMarker
+Stack Size = 8 
+Max Depth = 88"]; readDRIMarker;
+node [label="readSOFMarker
+Stack Size = 16 
+Max Depth = 96"]; readSOFMarker;
+node [label="readSOSMarker
+Stack Size = 24 
+Max Depth = 104"]; readSOSMarker;
+node [label="skipVariableMarker
+Stack Size = 8 
+Max Depth = 88"]; skipVariableMarker;
+node [label="stuffChar
+Stack Size = 0 
+Max Depth = 88"]; stuffChar;
+node [label="subAndClamp
+Stack Size = 0 
+Max Depth = 88"]; subAndClamp;
+node [label="transformBlock
+Stack Size = 8 
+Max Depth = 88"]; transformBlock;
+node [label="transformBlockReduce
+Stack Size = 64 
+Max Depth = 72"]; transformBlockReduce;
+node [label="upsampleCb
+Stack Size = 32 
+Max Depth = 32"]; upsampleCb;
+node [label="upsampleCbH
+Stack Size = 32 
+Max Depth = 32"]; upsampleCbH;
+node [label="upsampleCbV
+Stack Size = 32 
+Max Depth = 32"]; upsampleCbV;
+node [label="upsampleCr
+Stack Size = 32 
+Max Depth = 32"]; upsampleCr;
+node [label="upsampleCrH
+Stack Size = 32 
+Max Depth = 32"]; upsampleCrH;
+node [label="upsampleCrV
+Stack Size = 32 
+Max Depth = 32"]; upsampleCrV;
+
+Display_Profile -> LCD_TS_Blocking_Read;
+Display_Profile -> LCD_Text_PrintStr;
+Display_Profile -> LCD_Erase;
+Init_Profiling -> PIT_Start;
+Init_Profiling -> PIT_Init;
+LCD_Controller_Init -> Delay;
+LCD_Controller_Init -> LCD_24S_Write_Data;
+LCD_Controller_Init -> LCD_24S_Write_Command;
+LCD_Erase -> LCD_Fill_Buffer;
+LCD_Fill_Buffer -> LCD_24S_Write_Data;
+LCD_Fill_Buffer -> LCD_24S_Write_Command;
+LCD_Init -> LCD_TS_Init;
+LCD_Init -> LCD_GPIO_Init;
+LCD_Init -> LCD_Controller_Init;
+LCD_Init -> LCD_Init_Backlight;
+LCD_JPEG -> pjpeg_load_from_memory;
+LCD_Plot_Pixel -> LCD_24S_Write_Data;
+LCD_Plot_Pixel -> LCD_24S_Write_Command;
+LCD_Start_Rectangle -> LCD_24S_Write_Data;
+LCD_Start_Rectangle -> LCD_24S_Write_Command;
+LCD_TS_Blocking_Read -> LCD_TS_Read;
+LCD_TS_Init -> Init_ADC;
+LCD_TS_Read -> Delay;
+LCD_Text_PrintChar -> LCD_Write_Rectangle_Pixel;
+LCD_Text_PrintChar -> LCD_Start_Rectangle;
+LCD_Text_PrintStr -> LCD_Text_PrintChar;
+LCD_Text_PrintStr -> LCD_Text_GetGlyphWidth;
+LCD_Write_Rectangle_Pixel -> LCD_24S_Write_Data;
+PIT_IRQHandler -> Process_Profile_Sample;
+Q_Dequeue -> Q_Empty;
+Q_Enqueue -> Q_Full;
+UART0_IRQHandler -> Q_Full;
+UART0_IRQHandler -> Q_Enqueue;
+UART0_IRQHandler -> Q_Empty;
+UART0_IRQHandler -> Q_Dequeue;
+main -> Sort_Profile_Regions;
+main -> LCD_Text_Set_Colors;
+main -> LCD_Text_PrintStr;
+main -> LCD_Text_Init;
+main -> LCD_JPEG;
+main -> LCD_Init;
+main -> LCD_Erase;
+main -> Init_Profiling;
+main -> Enable_Profiling;
+main -> Display_Profile;
+main -> Disable_Profiling;
+main -> Init_RGB_LEDs;
+main -> Control_RGB_LEDs;
+main -> Delay;
+pjpeg_decode_init -> locateSOFMarker;
+pjpeg_decode_init -> initScan;
+pjpeg_decode_init -> initFrame;
+pjpeg_decode_init -> init;
+pjpeg_decode_mcu -> decodeNextMCU;
+pjpeg_load_from_memory -> pjpeg_decode_mcu;
+pjpeg_load_from_memory -> pjpeg_decode_init;
+pjpeg_load_from_memory -> LCD_Plot_Pixel;
+pjpeg_load_from_memory -> free;
+pjpeg_load_from_memory -> malloc;
+LCD_Init_Backlight -> PWM_Init;
+convertCb -> subAndClamp;
+convertCb -> addAndClamp;
+convertCr -> subAndClamp;
+convertCr -> addAndClamp;
+decodeNextMCU -> transformBlockReduce;
+decodeNextMCU -> transformBlock;
+decodeNextMCU -> processRestart;
+decodeNextMCU -> huffExtend;
+decodeNextMCU -> huffDecode;
+decodeNextMCU -> getBits2;
+fixInBuffer -> stuffChar;
+fixInBuffer -> getBits2;
+getBit -> getOctet;
+getBits -> getOctet;
+getBits1 -> getBits;
+getBits2 -> getBits;
+getChar -> fillInBuf;
+getOctet -> stuffChar;
+getOctet -> getChar;
+huffDecode -> getBit;
+huffExtend -> getExtendTest;
+huffExtend -> getExtendOffset;
+idctCols -> imul_b5;
+idctCols -> imul_b4;
+idctCols -> imul_b2;
+idctCols -> imul_b1_b3;
+idctCols -> clamp;
+idctRows -> imul_b5;
+idctRows -> imul_b4;
+idctRows -> imul_b2;
+idctRows -> imul_b1_b3;
+init -> getBits1;
+initScan -> locateSOSMarker;
+initScan -> fixInBuffer;
+initScan -> checkQuantTables;
+initScan -> checkHuffTables;
+locateSOFMarker -> readSOFMarker;
+locateSOFMarker -> processMarkers;
+locateSOFMarker -> locateSOIMarker;
+locateSOIMarker -> getBits1;
+locateSOSMarker -> readSOSMarker;
+locateSOSMarker -> processMarkers;
+nextMarker -> getBits1;
+processMarkers -> skipVariableMarker;
+processMarkers -> readDRIMarker;
+processMarkers -> readDQTMarker;
+processMarkers -> readDHTMarker;
+processMarkers -> nextMarker;
+processRestart -> getChar;
+processRestart -> getBits2;
+readDHTMarker -> huffCreate;
+readDHTMarker -> getMaxHuffCodes;
+readDHTMarker -> getHuffVal;
+readDHTMarker -> getHuffTable;
+readDHTMarker -> getBits1;
+readDQTMarker -> getBits1;
+readDQTMarker -> createWinogradQuant;
+readDRIMarker -> getBits1;
+readSOFMarker -> getBits1;
+readSOSMarker -> getBits1;
+skipVariableMarker -> getBits1;
+transformBlock -> upsampleCrV;
+transformBlock -> upsampleCrH;
+transformBlock -> upsampleCr;
+transformBlock -> upsampleCbV;
+transformBlock -> upsampleCbH;
+transformBlock -> upsampleCb;
+transformBlock -> idctRows;
+transformBlock -> idctCols;
+transformBlock -> copyY;
+transformBlock -> convertCr;
+transformBlock -> convertCb;
+transformBlockReduce -> subAndClamp;
+transformBlockReduce -> clamp;
+transformBlockReduce -> addAndClamp;
+upsampleCb -> subAndClamp;
+upsampleCb -> addAndClamp;
+upsampleCbH -> subAndClamp;
+upsampleCbH -> addAndClamp;
+upsampleCbV -> subAndClamp;
+upsampleCbV -> addAndClamp;
+upsampleCr -> subAndClamp;
+upsampleCr -> addAndClamp;
+upsampleCrH -> subAndClamp;
+upsampleCrH -> addAndClamp;
+upsampleCrV -> subAndClamp;
+upsampleCrV -> addAndClamp;
+
+}
