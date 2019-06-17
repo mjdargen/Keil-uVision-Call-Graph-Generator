@@ -10,5 +10,5 @@ Example input .txt file, output .gv file, and images in example folder.
 
 Keil uVision configuration for outputting .txt call graph file:
 <p align="center">
-  <img src="https://github.ncsu.edu/mjdargen/Keil-uVision-Call-Graph-Generator/blob/master/example/uVision_config.PNG" width="600">
+  <img src="https://github.com/mjdargen/Keil-uVision-Call-Graph-Generator/blob/master/example/uVision_config.PNG" width="600">
 </p>
